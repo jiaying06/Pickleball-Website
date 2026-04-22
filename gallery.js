@@ -1,5 +1,3 @@
-﻿//gallery.js
-
 const images = [
     "court(g).jpeg",
     "training.jpeg",
@@ -9,28 +7,32 @@ const images = [
 let index = 0;
 let slideImage;
 
-window.onload = function() {
+// 使用 DOMContentLoaded 确保 HTML 元素加载完毕后再运行脚本
+document.addEventListener("DOMContentLoaded", function() {
     slideImage = document.getElementById("slideImage");
 
-    setInterval(() => {
-        index = (index + 1) % images.length;
-        slideImage.src = images[index];
-    }, 3000);
-};
+    // 检查元素是否存在，防止报错
+    if (slideImage) {
+        setInterval(() => {
+            index = (index + 1) % images.length;
+            slideImage.src = images[index];
+        }, 3000);
+    }
+});
 
 function openSlide(i) {
     index = i;
-    if (slideImage) slideImage.src = images[index];
+    if (slideImage) {
+        slideImage.src = images[index];
+    }
 }
 
 function nextSlide() {
-    if (!slideImage) slideImage = document.getElementById("slideImage");
     index = (index + 1) % images.length;
-    slideImage.src = images[index];
+    if (slideImage) slideImage.src = images[index];
 }
 
 function prevSlide() {
-    if (!slideImage) slideImage = document.getElementById("slideImage");
     index = (index - 1 + images.length) % images.length;
-    slideImage.src = images[index];
+    if (slideImage) slideImage.src = images[index];
 }
