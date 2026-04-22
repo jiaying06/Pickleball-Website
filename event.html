@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Events Calendar</title>
+<link rel="stylesheet" href="../CSS_Folder/style.css">
+<link rel="stylesheet" href="../CSS_Folder/event.css">
+
+</head>
+
+<body>
+
+<div id="container">
+
+    <header>
+        <div id="logo-area">
+            <h1>Events Calendar</h1>
+        </div>
+
+<nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                
+                <li>
+                    <a href="#">About Club ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="about.html">About Pickleball</a></li>
+                        <li><a href="mission.html">Mission, Vision &amp; Objectives</a></li>
+                        <li><a href="committee.html">Club Committee</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#">Resources ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="rules.html">Rules &amp; Regulations</a></li>
+                        <li><a href="equipment.html">Equipment &amp; Attire</a></li>
+                        <li><a href="schedules.html">Training Schedule</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="event.html">Events Calendar</a></li>
+                
+                <li>
+                    <a href="#">Media ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="news.html">News &amp; Media</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#">Join Us ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="membership.html">Membership Registration</a></li>
+                        <li><a href="eventreg.html">Event Registration</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#">Support ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="enquiry.html">Enquiry Form</a></li>
+                        <li><a href="feedback.html">Feedback Form</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== Events Section ===== -->
+    <section id="events">
+        <h3>Upcoming Events</h3>
+
+        <table id="eventsTable">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Event</th>
+                    <th>Location</th>
+                    <th>Status</th>
+                    <th>Register</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-deadline="2026-03-09T23:59:00">
+                    <td>02 March 2026</td>
+                    <td>Beginner Training Session</td>
+                    <td>APU Sports Hall</td>
+                    <td class="event-status">Loading...</td>
+                    <td><a href="eventreg.html" class="cta-button-small">Register</a></td>
+                </tr>
+                <tr data-deadline="2026-03-17T23:59:00">
+                    <td>18 Jan 2026</td>
+                    <td>Friendly Match</td>
+                    <td>APU Outdoor Court</td>
+                    <td class="event-status">Loading...</td>
+                    <td><a href="eventreg.html" class="cta-button-small">Register</a></td>
+                </tr>
+                <tr data-deadline="2026-03-24T23:59:00">
+                    <td>25 Feb 2026</td>
+                    <td>Inter-Club Tournament</td>
+                    <td>APU Main Arena</td>
+                    <td class="event-status">Loading...</td>
+                    <td><a href="eventreg.html" class="cta-button-small">Register</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2026 APU Pickleball Club. All Rights Reserved.</p>
+    </footer>
+
+</div>
+
+<script src="../JVSCRIPTS_Folder/event.js" defer></script>
+
+</body>
+</html>

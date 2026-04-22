@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Enquiry Form</title>
+
+<link rel="stylesheet" href="../CSS_Folder/style.css">
+<link rel="stylesheet" href="../CSS_Folder/enquiry.css">
+
+</head>
+
+<body class="page-enquiry">
+
+<div id="container">
+
+    <header>
+        <div id="logo-area">
+            <h1>Enquiry Form</h1>
+        </div>
+
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                
+                <li>
+                    <a href="#">About Club ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="about.html">About Pickleball</a></li>
+                        <li><a href="mission.html">Mission, Vision &amp; Objectives</a></li>
+                        <li><a href="committee.html">Club Committee</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#">Resources ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="rules.html">Rules &amp; Regulations</a></li>
+                        <li><a href="equipment.html">Equipment &amp; Attire</a></li>
+                        <li><a href="schedules.html">Training Schedule</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="event.html">Events Calendar</a></li>
+                
+                <li>
+                    <a href="#">Media ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="news.html">News &amp; Media</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#">Join Us ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="membership.html">Membership Registration</a></li>
+                        <li><a href="eventreg.html">Event Registration</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#">Support ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="enquiry.html">Enquiry Form</a></li>
+                        <li><a href="feedback.html">Feedback Form</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+
+<section class="enquiry-hero">
+    <p class="enquiry-label">CONTACT US</p>
+    <h2>Get in Touch With Our Club</h2>
+    <p>
+        Have questions about membership, training sessions, or club activities?
+        Send us your enquiry and our committee team will respond shortly.
+    </p>
+</section>
+
+<section class="enquiry-layout">
+
+    <aside class="enquiry-info">
+
+        <h3>Why Contact Us?</h3>
+
+        <ul>
+            <li>Join as a new member</li>
+            <li>Ask about training schedules</li>
+            <li>Club events &amp; tournaments</li>
+            <li>General enquiries</li>
+        </ul>
+
+        <div class="contact-cards">
+
+            <div class="contact-card">
+                &#128205; APU Sports Hall
+            </div>
+
+            <div class="contact-card">
+                &#9200; Weekly Sessions: Wed &amp; Fri
+            </div>
+
+            <div class="contact-card">
+                &#127992; Beginners Welcome
+            </div>
+
+        </div>
+
+        <p class="info-note">Responses are usually made within 1–2 working days.</p>
+        
+	        <div class="enquiry-photo-box">
+	   			 <img alt="court" src="../IMAGE_Folder/court.png">
+		</div>
+
+    </aside>
+
+    <section class="enquiry-form-card">
+
+        <h3>Enquiry Form</h3>
+
+        <form id="enquiryForm" novalidate>
+
+            <div class="form-row">
+                <label>Full Name *</label>
+                <input type="text" id="fullName">
+                <span class="error-message"></span>
+            </div>
+
+            <div class="form-row">
+                <label>Student ID *</label>
+                <input type="text" id="studentId">
+                <span class="error-message"></span>
+            </div>
+
+            <div class="form-row">
+                <label>APU Email *</label>
+                <input type="email" id="email">
+                <span class="error-message"></span>
+            </div>
+
+            <div class="form-row">
+                <label>Type of Enquiry *</label>
+                <select id="enquiryType">
+                    <option value="">-- Please Select --</option>
+                    <option value="membership">Membership</option>
+                    <option value="training">Training Schedule</option>
+                    <option value="events">Events &amp; Tournaments</option>
+                    <option value="others">Others</option>
+                </select>
+                <span class="error-message"></span>
+            </div>
+
+            <div class="form-row">
+                <label>Preferred Contact Method *</label>
+
+                <div class="inline-options">
+                    <label><input type="radio" name="contact" value="email"> Email</label>
+                    <label><input type="radio" name="contact" value="phone"> Phone / WhatsApp</label>
+                </div>
+
+                <span class="error-message"></span>
+            </div>
+
+                <div class="form-row hidden" id="phoneRow">
+                <label>Phone Number</label>
+                <input type="text" id="phone">
+                <span class="error-message"></span>
+            </div>
+
+            <div class="form-row">
+                <label>Message *</label>
+                <textarea id="message" rows="5"></textarea>
+                <span class="error-message"></span>
+            </div>
+
+
+            <div class="form-row buttons">
+                <button type="submit" class="btn-primary">Submit Enquiry</button>
+                <button type="reset" class="btn-secondary">Reset</button>
+            </div>
+
+        </form>
+
+        <div class="success-box" id="successBox">
+            &#9989; Your enquiry has been submitted successfully.<br>
+            Our club committee will contact you soon.
+        </div>
+
+    </section>
+
+</section>
+
+</main>
+
+<footer>
+<p>&copy; 2026 APU Pickleball Club. All rights reserved.</p>
+</footer>
+
+</div>
+
+<script src="../JVSCRIPTS_Folder/enquiry.js"></script>
+
+</body>
+</html>

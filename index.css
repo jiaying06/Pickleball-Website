@@ -1,0 +1,172 @@
+﻿/*index.css*/
+
+#hero-section {
+    min-height: 550px; 
+    background: linear-gradient(rgba(0, 51, 153, 0.35), rgba(0, 20, 60, 0.45)), 
+                url('../IMAGE_Folder/hero-pickleball.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px 80px; 
+}
+
+#hero-section h2 {
+    color: white;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1s forwards 0.3s;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #FFFFFF; 
+    color: #333333;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    transform: translateY(-3px);
+}
+
+main {
+    padding: 0 20px;
+    position: relative;
+    z-index: 10; 
+}
+
+#summary-section {
+    display: flex; 
+    justify-content: space-between;
+    gap: 30px; 
+    padding: 40px 30px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    
+    margin: -60px auto 40px; 
+    max-width: 1100px; 
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.intro-preview-area {
+    flex: 1.8; 
+    color: #333333; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#mission-intro {
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    width: 100%;
+}
+
+.cta-button-small {
+    display: inline-block;
+    background-color: #0033CC; 
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+#status-container {
+    background-color: #f8faff; 
+    padding: 18px;
+    margin-top: 30px; 
+    border-left: 5px solid #0033CC;
+    border-radius: 0 8px 8px 0;
+    border: 1px solid #eef2ff;
+    border-left: 5px solid #0033CC;
+    width: 100%;
+}
+
+.highlights-area {
+    flex: 1; 
+    background-color: #f4f7fa; 
+    border: 1px solid #e2e8f0;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.highlights-grid {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;
+}
+
+.highlight-item {
+    display: block; 
+    text-decoration: none;
+    color: #333;
+    padding: 15px;
+    border-left: 5px solid; 
+    background: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.03);
+    transition: all 0.3s ease;
+}
+
+.highlight-item:hover {
+    transform: translateX(5px); 
+    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+}
+
+.blue-border { border-color: #0033CC; }
+.yellow-border { border-color: #ffc107; }
+.green-border { border-color: #28a745; }
+
+.dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.dot-open { 
+    background-color: #28a745; 
+    box-shadow: 0 0 8px rgba(40, 167, 69, 0.4); 
+    animation: simple-pulse 2s infinite; 
+}
+
+.dot-closed { 
+    background-color: #dc3545; /* 红色 */
+    box-shadow: 0 0 8px rgba(220, 53, 69, 0.4);
+    animation: simple-pulse 2s infinite; /* 和绿色点一样闪烁 */
+}
+
+@keyframes simple-pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeUp {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 900px) {
+    #summary-section {
+        flex-direction: column;
+        margin-top: -30px; 
+        padding: 20px;
+    }
+}

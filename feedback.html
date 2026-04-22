@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Feedback Form</title>
+<link rel="stylesheet" href="../CSS_Folder/style.css">
+<link rel="stylesheet" href="../CSS_Folder/feedback.css">
+</head>
+
+<body class="page-about">
+
+<div id="container">
+
+ <header>
+        <div id="logo-area">
+            <h1>Feedback Form</h1>
+        </div>
+
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">About Club ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="about.html">About Pickleball</a></li>
+                        <li><a href="mission.html">Mission, Vision &amp; Objectives</a></li>
+                        <li><a href="committee.html">Club Committee</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Resources ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="rules.html">Rules &amp; Regulations</a></li>
+                        <li><a href="equipment.html">Equipment &amp; Attire</a></li>
+                        <li><a href="schedules.html">Training Schedule</a></li>
+                    </ul>
+                </li>
+                <li><a href="event.html">Events Calendar</a></li>
+                <li>
+                    <a href="#">Media ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="news.html">News &amp; Media</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Join Us ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="membership.html">Membership Registration</a></li>
+                        <li><a href="eventreg.html">Event Registration</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Support ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="enquiry.html">Enquiry Form</a></li>
+                        <li><a href="feedback.html">Feedback Form</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<section class="feedback-container">
+    <h1>&#127934; APU Pickleball Club Feedback</h1>
+    <p>Your feedback helps us improve future events!</p>
+
+    <form id="feedbackForm">
+        <div class="progress-bar">
+           <div id="progress"></div>
+        </div>
+        
+        <label>Name</label>
+        <input type="text" id="name" placeholder="Your full name">
+
+        <label>APU Email</label>
+        <input type="email" id="email" placeholder="tpXXXX@mail.apu.edu.my">
+
+        <label>Are you a club member?</label>
+        <select id="role">
+            <option value="">-- Select --</option>
+            <option>Member</option>
+            <option>Non-member</option>
+        </select>
+
+        <label>Rate your experience</label>
+        <div class="rating">
+            <span data-value="1">&#11088;</span>
+            <span data-value="2">&#11088;</span>
+            <span data-value="3">&#11088;</span>
+            <span data-value="4">&#11088;</span>
+            <span data-value="5">&#11088;</span>
+        </div>
+        <input type="hidden" id="rating">
+
+        <label>What did you enjoy?</label>
+        <textarea id="likes" placeholder="Tell us what you liked..."></textarea>
+
+        <label>Suggestions</label>
+        <textarea id="suggestions" placeholder="Any improvements?"></textarea>
+
+        <button type="submit">Submit Feedback</button>
+        <p id="message"></p>
+    </form>
+
+    <div id="thankYou" class="thank-you">
+       <h2>&#128153; Thank You!</h2>
+       <p>Your feedback helps improve APU Pickleball Club activities.</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 APU Pickleball Club. All rights reserved.</p>
+</footer>
+
+</div>
+
+<script src="../JVSCRIPTS_Folder/feedback.js"></script>
+
+</body>
+</html>

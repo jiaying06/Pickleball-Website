@@ -1,0 +1,126 @@
+﻿/*committee.css*/
+
+#committee {
+    background: linear-gradient(180deg, #e7f0ff 0%, #d0e0ff 50%, #ffffff 100%);
+    padding: 40px 20px;
+}
+
+#committee h3 {
+    text-align: center;
+    color: #0b2e59;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.committee-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.committee-card {
+    width: 220px;
+    background: rgba(255, 255, 255, 0.6); 
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.committee-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.committee-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.committee-card h4 {
+    color: #0b2e59;
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.committee-card p {
+    font-size: 0.95em;
+    color: #0b2e59;
+    margin-bottom: 10px;
+}
+
+.committee-card button {
+    padding: 8px 15px;
+    background-color: #0b2e59;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.committee-card button:hover {
+    background-color: #1565c0;
+    transform: scale(1.05);
+}
+
+.role-info {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    max-width: 90%;
+    background-color:#ECFFFF; 
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    text-align: left;
+    color:black;
+    font-family: Arial, sans-serif;
+}
+
+.role-info h4 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.role-info ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color:black; 
+    font-size: 14px;
+}
+
+.role-info button {
+    display: block;
+    margin: 20px auto 0 auto;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    background-color:#808080;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.role-info button:hover {
+    background-color: #1e88e5;
+}
+
+@media (max-width: 600px) {
+    .committee-card {
+        width: 90%;
+    }
+}

@@ -1,0 +1,120 @@
+﻿/*schedules.css*/
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+}
+
+#schedule-content {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#main-schedule thead tr {
+    background: linear-gradient(90deg, #0033CC, #0055ff);
+    color: white;
+    text-align: center;
+}
+
+#main-schedule th {
+    padding: 20px;
+    font-size: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#main-schedule td {
+    padding: 20px;
+    border-bottom: 1px solid #edf2f7;
+    text-align: center;
+    font-size: 1.05em;
+    color: #2d3748;
+}
+
+tr.Beginner td:nth-child(3) {
+    color: #2ecc71;
+    font-weight: bold;
+}
+
+tr.Intermediate td:nth-child(3) {
+    color: #e67e22;
+    font-weight: bold;
+}
+
+#main-schedule tbody tr {
+    transition: all 0.3s ease;
+}
+
+#main-schedule tbody tr:hover {
+    background-color: #ffffff;
+    transform: scale(1.01);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    z-index: 10;
+}
+
+#training-notes {
+    background: white;
+    border-radius: 20px;
+    padding: 30px !important;
+    border: none !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+#training-notes h3 {
+    font-size: 1.5em;
+    background: linear-gradient(90deg, #0033CC, #00d4ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+#training-notes li {
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    background: #f8fafc;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#training-notes li:hover {
+    background: #edf2ff;
+}
+
+#main-schedule tbody tr.today {
+    background-color: #fffae6;   
+    border-left: 5px solid #ffc107; 
+    transition: all 0.3s;
+}
+
+#training-notes li {
+    position: relative;
+    padding: 15px 20px;
+    margin-bottom: 12px;
+    background: #f8fafc;
+    border-radius: 10px;
+    list-style: none;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+#training-notes li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 0%;
+    background: linear-gradient(90deg, #0033CC, #00d4ff);
+    border-radius: 2px;
+    transition: width 0.5s ease;
+}
+
+#training-notes li:hover::after {
+    width: 100%;
+}
+

@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Membership Registration</title>
+<link rel="stylesheet" href="../CSS_Folder/style.css">
+<link rel="stylesheet" href="../CSS_Folder/membership.css">
+</head>
+
+<body>
+
+<header>
+    <div id="logo-area">
+        <h1>Membership Registration</h1>
+    </div>
+
+    <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                
+                <li>
+                    <a href="#">About Club ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="about.html">About Pickleball</a></li>
+                        <li><a href="mission.html">Mission, Vision &amp; Objectives</a></li>
+                        <li><a href="committee.html">Club Committee</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#">Resources ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="rules.html">Rules &amp; Regulations</a></li>
+                        <li><a href="equipment.html">Equipment &amp; Attire</a></li>
+                        <li><a href="schedules.html">Training Schedule</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="event.html">Events Calendar</a></li>
+                
+                <li>
+                    <a href="#">Media ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="news.html">News &amp; Media</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#">Join Us ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="membership.html">Membership Registration</a></li>
+                        <li><a href="eventreg.html">Event Registration</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#">Support ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="enquiry.html">Enquiry Form</a></li>
+                        <li><a href="feedback.html">Feedback Form</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+  <section class="membership-section">
+
+    <div class="club-left">
+      <div class="club-highlights">
+        <h2>Why Join APU Pickleball Club?</h2>
+        <ul>
+          <li>&#127934; Let's play pickleball together and have a blast!</li>
+          <li>&#128111; Meet new friends and find buddies to get things done with!</li>
+          <li>&#127775; Learn techniques from experienced players and your pickle skills will improve rapidly!</li>
+          <li>&#128538; The atmosphere is super chill &#128572; joining is all about fun and relaxation!</li>
+        </ul>
+      </div>
+
+	  <div id="lightbox" class="image-overlay">
+    	<img id="lightbox-img" src="" alt="Zoomed Image">
+	  </div>
+		
+      <div class="highlight-images">
+        <img src="../IMAGE_Folder/gather ball.jpg" alt="gather ball">
+        <img src="../IMAGE_Folder/gather food 02.jpg" alt="gather food 02">
+        <img src="../IMAGE_Folder/gather food.jpg" alt="gather food">
+        <img src="../IMAGE_Folder/gathering.jpg" alt="gathering">
+      </div>
+    </div>
+
+    <div class="form-right">
+      <section id="membership-form-container">
+        <h2>Membership Registration</h2>
+        <form id="membership-form">
+          <label for="fullname">Full Name &#9997;&#127996;</label>
+          <input type="text" id="fullname" name="fullname" placeholder="e.g., John Doe" required>
+
+          <label for="email">Email &#128231;</label>
+          <input type="email" id="email" name="email" placeholder="e.g., john@example.com" required>
+
+          <label for="phone">Phone Number &#128241;</label>
+          <input type="tel" id="phone" name="phone" placeholder="e.g., +60123456789" required>
+
+          <label for="level">Skill Level &#127919;</label>
+          <select id="level" name="level" required>
+              <option value="">Select your level</option>
+              <option value="beginner">Beginner &#128994;</option>
+              <option value="intermediate">Intermediate &#128992;</option>
+              <option value="advanced">Advanced &#128995;</option>
+          </select>
+
+          <label for="notes">About You / Training Goals &#128221;</label>
+          <textarea id="notes" name="notes" rows="4" placeholder="Tell us about your experience, goals, or why you want to join APU Pickleball Club"></textarea>
+
+			<div class="form-row center-btn">
+				<button type="submit">Submit</button>
+			</div>
+		
+          <div id="form-legend">
+            <p><span style="color:#2ecc71;">&#128994;</span> Beginner – Suitable for new players</p>
+            <p><span style="color:#e67e22;">&#128992;</span> Intermediate – For players with basic skills</p>
+            <p><span style="color:#e74c3c;">&#128995;</span> Advanced – For experienced players</p>
+          </div>
+        </form>
+      </section>
+    </div>
+
+  </section>
+</main>
+
+
+<footer style="text-align:center; margin-top:50px; padding:20px; color:white;">
+    <p>&copy; 2026 APU Pickleball Club. All rights reserved.</p>
+</footer>
+
+<script src="../JVSCRIPTS_Folder/membership.js"></script>
+
+
+</body>
+</html>

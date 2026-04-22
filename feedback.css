@@ -1,0 +1,141 @@
+﻿/*feedback.css*/
+
+body.page-about {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #ffffff;
+    color: #0b2e59;
+}
+
+.feedback-container {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 32px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255,255,255,0.6);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.feedback-container h1 {
+    text-align: center;
+    color: #0b2e59;
+    margin-bottom: 10px;
+}
+
+.feedback-container p {
+    text-align: center;
+    color: #475569;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-top: 16px;
+    font-weight: 600;
+    color: #0b2e59;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border-radius: 14px;
+    border: 1px solid rgba(37,99,235,0.3);
+    font-size: 14px;
+    background: rgba(255,255,255,0.8);
+    transition: 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 8px rgba(37,99,235,0.35);
+}
+
+textarea {
+    resize: none;
+    height: 90px;
+}
+
+.rating {
+    margin-top: 8px;
+    text-align: center;
+}
+
+.rating span {
+    font-size: 28px;
+    cursor: pointer;
+    opacity: 0.35;
+    transition: 0.2s;
+}
+
+.rating span:hover,
+.rating span.active {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+button {
+    margin-top: 28px;
+    width: 100%;
+    padding: 14px;
+    border-radius: 22px;
+    border: 1px solid rgba(37,99,235,0.35);
+    background: linear-gradient(135deg, #2563eb, #60a5fa);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 8px 25px rgba(37,99,235,0.35);
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 14px 30px rgba(37,99,235,0.45);
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+.progress-bar {
+    background: rgba(37,99,235,0.15);
+    height: 8px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 22px;
+}
+
+#progress {
+    height: 100%;
+    width: 0%;
+    background: #2563eb;
+    transition: width 0.3s ease;
+}
+
+.thank-you {
+    display: none;
+    text-align: center;
+    padding: 40px;
+}
+
+.thank-you h2 {
+    color: #0b2e59;
+    margin-bottom: 12px;
+}
+
+.thank-you p {
+    color: #475569;
+}
+
+@media (max-width: 768px) {
+    .feedback-container {
+        margin: 30px 18px;
+        padding: 22px;
+    }
+}

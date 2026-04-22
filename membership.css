@@ -1,0 +1,235 @@
+﻿/*membership.css*/
+
+.membership-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.club-left {
+    flex: 1 1 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-right {
+    flex: 1 1 500px;
+}
+
+.club-highlights {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.club-highlights h2 {
+    text-align: center;
+    font-size: 1.5em;
+    background: linear-gradient(90deg, #8e44ad, #f39c12);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.club-highlights ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.club-highlights ul li {
+    font-size: 1em;
+    margin-bottom: 12px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.club-highlights ul li::before {
+    content: "•";
+    color: #0033cc;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.highlight-images {
+    column-count: 2; 
+    column-gap: 10px;
+}
+
+.highlight-images img {
+    display: inline-block;
+    margin-bottom: 10px; 
+    width: 100%;
+    height: auto; 
+    border-radius: 8px;
+    cursor: zoom-in;
+    transition: transform 0.3s ease;
+}
+
+.highlight-images img:hover {
+    transform: scale(1.05);
+}
+
+#membership-form-container {
+    max-width: 100%;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    border: 1px solid #e5e5e5;
+    transition: transform 0.3s ease;
+}
+
+#membership-form-container:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+#membership-form-container h2 {
+    font-size: 1.4em;
+    text-align: center;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+#membership-form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+#membership-form-container input,
+#membership-form-container select,
+#membership-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 0.95em;
+    font-family: inherit;
+    color: #333;
+    box-sizing: border-box;
+}
+
+#membership-form-container textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#membership-form-container input:focus,
+#membership-form-container select:focus,
+#membership-form-container textarea:focus {
+    outline: none;
+    border-color: #000099;
+    box-shadow: 0 0 5px rgba(0, 0, 153, 0.1);
+}
+
+.center-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#membership-form-container button {
+    width: auto;
+    min-width: 150px;
+    padding: 10px 30px;
+    border-radius: 25px; 
+    border: 2px solid #000099;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: inherit;
+    background: #000099;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#membership-form-container button:hover {
+    background: white;
+    color: #000099;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 153, 0.2);
+}
+
+.field-hint {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+#form-legend {
+    margin-top: 25px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    font-size: 0.9em;
+}
+
+#form-legend p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+#form-legend span {
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+#form-legend p:hover {
+    background-color: #edf2ff;
+    padding-left: 8px;
+    border-radius: 5px;
+}
+
+.image-overlay {
+    display: none; 
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); 
+    justify-content: center;
+    align-items: center;
+    cursor: zoom-out;
+}
+
+.image-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.image-overlay.active {
+    display: flex;
+}
+
+.image-overlay.active img {
+    transform: scale(1);
+}
+
+@media screen and (max-width: 900px) {
+    .membership-section {
+        flex-direction: column;
+    }
+    .club-left, .form-right {
+        flex: 1 1 100%;
+    }
+    .highlight-images {
+        column-count: 2;
+    }
+}

@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Event Registration</title>
+<link rel="stylesheet" href="../CSS_Folder/style.css">
+<link rel="stylesheet" href="../CSS_Folder/eventreg.css">
+
+</head>
+
+<body>
+
+<div id="container">
+
+    <header>
+        <div id="logo-area">
+            <h1>Event Registration</h1>
+        </div>
+        
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                
+                <li>
+                    <a href="#">About Club ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="about.html">About Pickleball</a></li>
+                        <li><a href="mission.html">Mission, Vision &amp; Objectives</a></li>
+                        <li><a href="committee.html">Club Committee</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#">Resources ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="rules.html">Rules &amp; Regulations</a></li>
+                        <li><a href="equipment.html">Equipment &amp; Attire</a></li>
+                        <li><a href="schedules.html">Training Schedule</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="event.html">Events Calendar</a></li>
+                
+                <li>
+                    <a href="#">Media ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="news.html">News &amp; Media</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#">Join Us ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="membership.html">Membership Registration</a></li>
+                        <li><a href="eventreg.html">Event Registration</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="#">Support ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="enquiry.html">Enquiry Form</a></li>
+                        <li><a href="feedback.html">Feedback Form</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="registration">
+        <h3>Register for an Event &#128535;</h3>
+        
+        <form id="registrationForm">
+            <label for="fullname">Fullname:</label>
+            <input type="text" id="fullname" placeholder="Your full name">
+
+            <label for="studentid">Student ID:</label>
+            <input type="text" id="studentid" placeholder="e.g., TPXXXX">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="e.g., tpXXXX@mail.apu.edu.my">
+
+            <label for="phone">Phone Number &#128222;:</label>
+            <input type="tel" id="phone" placeholder="e.g., +6012-3456789">
+
+            <label for="emergency">Emergency Contact &#128680;:</label>
+            <input type="tel" id="emergency" placeholder="e.g., +6012-9876543">
+
+            <label for="event">Select Event:</label>
+            <select id="event">
+                <option value="">-- Please Select --</option>
+                <option>Beginner Training Session</option>
+                <option>Friendly Match</option>
+                <option>Inter-Club Tournament</option>
+            </select>
+
+            <label for="notes">Additional Notes / Special Requests &#128204;:</label>
+            <textarea id="notes" placeholder="Any special requests..."></textarea>
+
+            <label>
+                <input type="checkbox" id="agreement" required>
+                I agree to follow club rules and guidelines.
+            </label>
+
+            <button type="submit">Register</button>
+
+            <p id="regMessage" style="margin-top:15px; font-weight:bold; color:#0d47a1;"></p>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2026 APU Pickleball Club. All Rights Reserved.</p>
+    </footer>
+
+</div>
+
+<script src="../JVSCRIPTS_Folder/eventreg.js"></script>
+
+</body>
+</html>

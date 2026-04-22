@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Equipment &amp; Attire</title>
+
+<link rel="stylesheet" href="../CSS_Folder/style.css">
+<link rel="stylesheet" href="../CSS_Folder/equipment.css">
+
+</head>
+
+<body class="page-about">
+
+<div id="container">
+
+<header>
+  <div id="logo-area">
+    <h1>Equipment &amp; Attire</h1>
+  </div>
+
+  <nav id="main-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+
+      <li>
+        <a href="#">About Club ▼</a>
+        <ul class="dropdown">
+          <li><a href="about.html">About Pickleball</a></li>
+          <li><a href="mission.html">Mission, Vision &amp; Objectives</a></li>
+          <li><a href="committee.html">Club Committee</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#">Resources ▼</a>
+        <ul class="dropdown">
+          <li><a href="rules.html">Rules &amp; Regulations</a></li>
+          <li><a href="equipment.html">Equipment &amp; Attire</a></li>
+          <li><a href="schedules.html">Training Schedule</a></li>
+        </ul>
+      </li>
+
+      <li><a href="event.html">Events Calendar</a></li>
+
+      <li>
+        <a href="#">Media ▼</a>
+        <ul class="dropdown">
+          <li><a href="news.html">News &amp; Media</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#">Join Us ▼</a>
+        <ul class="dropdown">
+          <li><a href="membership.html">Membership Registration</a></li>
+          <li><a href="eventreg.html">Event Registration</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#">Support ▼</a>
+        <ul class="dropdown">
+          <li><a href="enquiry.html">Enquiry Form</a></li>
+          <li><a href="feedback.html">Feedback Form</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<section class="container">
+
+  <div class="page-header">
+    <h1>Equipment &amp; Attire</h1>
+    <p class="intro">
+      This page outlines the required and recommended equipment and attire for club members.
+    </p>
+  </div>
+
+  <div class="dark-toggle">
+    <button onclick="toggleDark()">&#127769; Dark Mode</button>
+  </div>
+
+  <div class="filter-btns">
+    <button onclick="filterItems('all')">All</button>
+    <button onclick="filterItems('required')">Required</button>
+    <button onclick="filterItems('optional')">Optional</button>
+  </div>
+
+  <div class="grid">
+
+    <div class="card required">
+      <img src="../IMAGE_Folder/jersey.jpeg" alt="Club Jersey">
+      <h3>Club Jersey</h3>
+      <p>Official jersey worn during events and competitions.</p>
+      <span class="tag required-tag">Required</span>
+    </div>
+
+    <div class="card required">
+      <img src="../IMAGE_Folder/shoes.jpeg" alt="Sports Shoes">
+      <h3>Sports Shoes</h3>
+      <p>Proper footwear to prevent injuries during activities.</p>
+      <span class="tag required-tag">Required</span>
+    </div>
+
+    <div class="card optional">
+      <img src="../IMAGE_Folder/waterbottle.jpeg" alt="Water Bottle">
+      <h3>Water Bottle</h3>
+      <p>Recommended to stay hydrated during training sessions.</p>
+      <span class="tag optional-tag">Optional</span>
+    </div>
+
+  </div>
+
+  <div class="guidelines">
+    <h2 id="guidelines-title">Attire Guidelines</h2> 
+  </div>
+
+  <div class="do-dont">
+    <div>
+      <h3>Do &#9989;</h3>
+      <ul>
+        <li>Wear club jersey during official events</li>
+        <li>Wear comfortable sports attire</li>
+        <li>Use proper sports shoes</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Don't &#10060;</h3>
+      <ul>
+        <li>Wear slippers or sandals</li>
+        <li>Wear offensive or inappropriate clothing</li>
+        <li>Ignore safety equipment</li>
+      </ul>
+    </div>
+  </div>
+
+</section>
+
+<div class="modal" id="imgModal" onclick="closeModal()">
+  <img id="modalImg">
+</div>
+
+<footer>
+  <p>&copy; 2026 APU Pickleball Club. All rights reserved.</p>
+</footer>
+
+</div>
+
+<script src="../JVSCRIPTS_Folder/equipment.js"></script>
+</body>
+</html>

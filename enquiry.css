@@ -1,0 +1,180 @@
+﻿/*enquiry.css*/
+
+body.page-enquiry {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    background: linear-gradient(180deg, #e7f0ff 0%, #ffffff 35%, #f5f7ff 100%);
+    color: #333333;
+    scroll-behavior: smooth;
+    min-height: 100vh;
+}
+
+.page-enquiry #container {
+    width: 100%;        
+    max-width: none;    
+    margin: 0;          
+    background-color: #ffffff;
+    box-shadow: none;   
+    border-radius: 0;   
+    padding: 0;         
+}
+
+.enquiry-hero {
+    padding: 26px 40px;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7ff;
+}
+
+.enquiry-label {
+    letter-spacing: 2px;
+    font-size: .8em;
+    text-transform: uppercase;
+    color: #777;
+}
+
+.enquiry-hero h2 {
+    color: #000;
+    margin: 4px 0;
+}
+
+.enquiry-hero p {
+    max-width: 760px;
+}
+
+.enquiry-layout {
+    display: flex;
+    gap: 24px;
+    padding: 24px 40px;
+}
+
+.enquiry-info {
+    flex: 1;
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    border: 1px solid #dfe2ff;
+}
+
+.enquiry-info h3 {
+    margin-bottom: 6px;
+}
+
+.enquiry-info ul {
+    margin-left: 18px;
+}
+
+.enquiry-photo-box {
+    margin-top: 12px;
+}
+
+.enquiry-photo-box img {
+    width: 80%;
+    height: 150px;   
+    border-radius: 12px;
+    object-fit: cover;
+    display: block;
+}
+
+.enquiry-info li {
+    margin-bottom: 6px;
+}
+
+.contact-cards {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.contact-card {
+    padding: 6px 12px;
+    border-radius: 10px;
+    background: #eef1ff;
+    border: 1px solid #ccd3ff;
+}
+
+.enquiry-form-card {
+    flex: 1.3;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e5e5e5;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.form-row input:focus,
+.form-row select:focus,
+.form-row textarea:focus {
+    outline: none;
+    border-color: #000099;
+}
+
+.inline-options {
+    display: flex;
+    gap: 12px;
+}
+
+.error-message {
+    font-size: .85em;
+    color: #b60000;
+}
+
+.form-row.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 8px 18px;
+    border-radius: 18px;
+    border: 2px solid #000099;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background: #000099;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: white;
+    color: #000099;
+}
+
+.btn-secondary {
+    background: white;
+    color: #000099;
+}
+
+.btn-secondary:hover {
+    background: #000099;
+    color: white;
+}
+
+.success-box {
+    display: none;
+    margin-top: 12px;
+    padding: 10px;
+    background: #e9ffee;
+    border: 1px solid #61c078;
+    border-radius: 8px;
+}
+
+.hidden {
+    display: none;
+}
+

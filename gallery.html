@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>APU Pickleball Club Photo Gallery</title>
+<link rel="stylesheet" href="../CSS_Folder/style.css">
+<link rel="stylesheet" href="../CSS_Folder/gallery.css">
+</head>
+
+<body class="page-about">
+
+<div id="container">
+
+    <header>
+        <div id="logo-area">
+            <h1>Pickleball Club Gallery</h1>
+        </div>
+
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">About Club ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="about.html">About Pickleball</a></li>
+                        <li><a href="mission.html">Mission, Vision &amp; Objectives</a></li>
+                        <li><a href="committee.html">Club Committee</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Resources ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="rules.html">Rules &amp; Regulations</a></li>
+                        <li><a href="equipment.html">Equipment &amp; Attire</a></li>
+                        <li><a href="schedules.html">Training Schedule</a></li>
+                    </ul>
+                </li>
+                <li><a href="event.html">Events Calendar</a></li>
+                <li>
+                    <a href="#">Media ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="news.html">News &amp; Media</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Join Us ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="membership.html">Membership Registration</a></li>
+                        <li><a href="eventreg.html">Event Registration</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Support ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="enquiry.html">Enquiry Form</a></li>
+                        <li><a href="feedback.html">Feedback Form</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Slideshow -->
+    <section class="slideshow">
+        <img id="slideImage" src="../IMAGE_Folder/court(g).jpeg" alt="Pickleball Slideshow">
+
+        <div class="slide-buttons">
+            <button onclick="prevSlide()">❮ Prev</button>
+            <button onclick="nextSlide()">Next ❯</button>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="gallery-item" onclick="openSlide(0)">
+            <img src="../IMAGE_Folder/court(g).jpeg" alt="APU Pickleball Court">
+            <p class="caption">APU Indoor Pickleball Court</p>
+        </div>
+
+        <div class="gallery-item" onclick="openSlide(1)">
+            <img src="../IMAGE_Folder/training.jpeg" alt="Training Session">
+            <p class="caption">Weekly Training Session</p>
+        </div>
+
+        <div class="gallery-item" onclick="openSlide(2)">
+            <img src="../IMAGE_Folder/tournament.jpeg" alt="Tournament Session">
+            <p class="caption">Inter-University Tournament</p>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 APU Pickleball Club. All rights reserved.</p>
+</footer>
+
+<script src="../JVSCRIPTS_Folder/gallery.js"></script>
+</body>
+</html>

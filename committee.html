@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Club Committee</title>
+<link rel="stylesheet" href="../CSS_Folder/style.css">
+<link rel="stylesheet" href="../CSS_Folder/committee.css">
+</head>
+
+<body class="page-about">
+
+<div id="container">
+
+    <header>
+        <div id="logo-area">
+            <h1>Club Committee</h1>
+        </div>
+
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">About Club ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="about.html">About Pickleball</a></li>
+                        <li><a href="mission.html">Mission, Vision &amp; Objectives</a></li>
+                        <li><a href="committee.html">Club Committee</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Resources ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="rules.html">Rules &amp; Regulations</a></li>
+                        <li><a href="equipment.html">Equipment &amp; Attire</a></li>
+                        <li><a href="schedules.html">Training Schedule</a></li>
+                    </ul>
+                </li>
+                <li><a href="event.html">Events Calendar</a></li>
+                <li>
+                    <a href="#">Media ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="news.html">News &amp; Media</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Join Us ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="membership.html">Membership Registration</a></li>
+                        <li><a href="eventreg.html">Event Registration</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Support ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="enquiry.html">Enquiry Form</a></li>
+                        <li><a href="feedback.html">Feedback Form</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="committee">
+    <h3>Our Committee Members</h3>
+
+    <div class="committee-list">
+        <div class="committee-card">
+            <img src="../IMAGE_Folder/president.jpg" alt="President">
+            <h4>President</h4>
+            <p>Name: John Tan</p>
+            <button onclick="showInfo('President')">View Role</button>
+        </div>
+
+        <div class="committee-card">
+            <img src="../IMAGE_Folder/vice president.jpg" alt="Vice President">
+            <h4>Vice President</h4>
+            <p>Name: Aisyah Rahman</p>
+            <button onclick="showInfo('Vice President')">View Role</button>
+        </div>
+
+        <div class="committee-card">
+            <img src="../IMAGE_Folder/secretary.jpg" alt="Secretary">
+            <h4>Secretary</h4>
+            <p>Name: Kevin Lim</p>
+            <button onclick="showInfo('Secretary')">View Role</button>
+        </div>
+
+        <div class="committee-card">
+            <img src="../IMAGE_Folder/treasurer.jpg" alt="Treasurer">
+            <h4>Treasurer</h4>
+            <p>Name: Nur Amirah</p>
+            <button onclick="showInfo('Treasurer')">View Role</button>
+        </div>
+    </div>
+
+	<div id="roleInfo" class="role-info">
+    	<h4 id="roleTitle"></h4>
+    	<ul id="roleDesc"></ul>
+    	<button onclick="closeRoleInfo()">Close</button>
+	</div>
+    
+    </section>
+
+    <footer>
+        <p>&copy; 2026 APU Pickleball Club. All Rights Reserved.</p>
+    </footer>
+
+</div>
+
+<script src="../JVSCRIPTS_Folder/committee.js" defer></script>
+</body>
+</html>

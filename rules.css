@@ -1,0 +1,213 @@
+﻿/*rules.css*/
+
+.page-rules #container {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    box-shadow: none;
+    background-color: #ffffff;
+}
+
+.page-rules {
+    scroll-behavior: smooth;
+}
+
+.page-rules main {
+    padding: 0 0 40px 0;
+}
+
+
+body.page-rules {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.page-rules main {
+    padding: 0 0 60px 0;
+}
+
+.rules-page {
+    counter-reset: ruleBlock;
+}
+
+.rules-hero {
+    padding: 50px 8% 45px 8%;
+    background: linear-gradient(90deg, #0033CC, #00d4ff);
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.rules-hero::after {
+    content: "";
+    position: absolute;
+    right: -80px;
+    top: -60px;
+    width: 260px;
+    height: 260px;
+    background: radial-gradient(circle, rgba(255,255,255,0.25), transparent 70%);
+    opacity: 0.6;
+}
+
+.rules-hero-inner {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    z-index: 1;
+}
+
+.rules-label {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    color: #e6f0ff;
+    margin-bottom: 6px;
+}
+
+.rules-hero h2 {
+    font-size: 2.4em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.rules-hero p {
+    max-width: 720px;
+    color: #f2f6ff;
+}
+
+.rules-badges {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.badge {
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 0.8em;
+    background: rgba(255,255,255,0.18);
+    border: 1px solid rgba(255,255,255,0.4);
+}
+
+.content-section {
+    position: relative;
+    max-width: 900px;
+    margin: 26px auto 0 auto;
+    padding: 24px 26px 22px 26px;
+
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.4);
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    transition: all .3s ease;
+}
+
+.content-section.alt {
+    background: rgba(248,250,255,0.95);
+}
+
+.content-section:hover {
+    transform: translateY(-3px) scale(1.01);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+}
+
+.content-section::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 16px;
+    bottom: 16px;
+    width: 4px;
+    border-radius: 0 6px 6px 0;
+    background: linear-gradient(180deg, #0033CC, #00d4ff);
+}
+
+.content-section::before {
+    counter-increment: ruleBlock;
+    content: counter(ruleBlock, decimal-leading-zero);
+    position: absolute;
+    left: 18px;
+    top: -16px;
+
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0033CC, #00d4ff);
+    color: #ffffff;
+    font-size: .85em;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 10px 22px rgba(0,70,200,.35);
+}
+
+.content-section h3 {
+    position: relative;
+    padding-left: 34px;
+    padding-right: 26px;
+
+    color: #0f1e4a;
+    font-weight: 700;
+    font-size: 1.1em;
+
+    border-bottom: 1px solid #e4ebff;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+
+    cursor: pointer;
+}
+
+.content-section h3::after {
+    content: "";
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    width: 9px;
+    height: 9px;
+    border-right: 2px solid #5b6fdc;
+    border-bottom: 2px solid #5b6fdc;
+    transform: translateY(-55%) rotate(45deg);
+    transition: .3s;
+}
+
+.content-section.collapsed h3::after {
+    transform: translateY(-45%) rotate(-135deg);
+}
+
+.rules-list {
+    margin-left: 36px;
+    margin-top: 6px;
+    color: #344067;
+}
+
+.rules-list li {
+    margin-bottom: 8px;
+}
+
+.rules-list li::marker {
+    color: #0055ff;
+}
+
+.rules-list.numbered {
+    list-style-type: decimal;
+}
+
+.content-section.collapsed .rules-list {
+    display: none;
+}
+
+.content-section.reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity .4s ease, transform .4s ease;
+}
+
+.content-section.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
