@@ -1,9 +1,9 @@
 ﻿//gallery.js
 
 const images = [
-    "../IMAGE_Folder/court(g).jpeg",
-    "../IMAGE_Folder/training.jpeg",
-    "../IMAGE_Folder/tournament.jpeg"
+    "court(g).jpeg",
+    "training.jpeg",
+    "tournament.jpeg"
 ];
 
 let index = 0;
